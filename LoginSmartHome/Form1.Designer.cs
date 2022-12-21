@@ -41,6 +41,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.showpassword = new Guna.UI2.WinForms.Guna2CheckBox();
             this.pass_input = new Guna.UI2.WinForms.Guna2TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,7 +63,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.Aqua;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(1040, 51);
+            this.guna2Button1.Location = new System.Drawing.Point(1047, 55);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(229, 83);
             this.guna2Button1.TabIndex = 4;
@@ -234,12 +235,21 @@
             this.pass_input.UseSystemPasswordChar = true;
             this.pass_input.TextChanged += new System.EventHandler(this.pass_input_TextChanged);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Location = new System.Drawing.Point(895, 27);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(226, 22);
+            this.dateTimePicker1.TabIndex = 14;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1403, 516);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.pass_input);
             this.Controls.Add(this.guna2GradientButton2);
             this.Controls.Add(this.showpassword);
@@ -274,6 +284,7 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2CheckBox showpassword;
         private Guna.UI2.WinForms.Guna2TextBox pass_input;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
 
